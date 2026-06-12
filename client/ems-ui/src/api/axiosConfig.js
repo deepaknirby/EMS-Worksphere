@@ -2,7 +2,7 @@ import axios from "axios";
 
 const createApi = (email,password) => {
     return axios.create({
-        baseURL: 'http://localhost:8090/api',
+        baseURL: 'ems-worksphere-production-49c7.up.railway.app',
         auth : {
             username: email,
             password: password
@@ -14,7 +14,7 @@ const createApi = (email,password) => {
 }
 
 export const publicApi = axios.create({
-    baseURL: 'http://localhost:8090/api',
+    baseURL: 'ems-worksphere-production-49c7.up.railway.app',
     headers: {
         'Content-Type': 'application/json'
     }
